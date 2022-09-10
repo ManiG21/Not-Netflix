@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { getDataApi } from "../network-requests";
+import Singlemovie from "./Single Movie/single-movie";
 
 function MovieList() {
   const [moviesList, setMoviesList] = useState([]);
@@ -11,7 +12,9 @@ function MovieList() {
   }, []);
 
   console.log(moviesList);
-  return <div></div>;
+  return <div>
+   
+  </div>;
 }
 
 export default MovieList;
