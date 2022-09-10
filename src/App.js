@@ -5,17 +5,19 @@ import { getDataApi } from './network-requests';
 import Singlemovie from './components/Single Movie/single-movie'
 import LandingPage from './components/LandingPage';
 
+
 function App() {
   const [company, setCompany] = useState(null)
   //run this only when component first hits the page
   useEffect(()=> {
-    getDataApi("company/2")
+    getDataApi("company/7")
       .then(res => setCompany(res))
   }, [])
   
   console.log(company)
   return (
     <div className="App">
+      <h1>M&M</h1>
       {company?.name} {company?.headquarters}
       <Routes>
         <Route path="/" element = {<LandingPage/>}/>
