@@ -1,3 +1,8 @@
+import Movielist from './Movielist'
+
 export default function LandingPage(){
-    return <h1>Landing Page</h1>
+    return <div>
+        <h1>Landing Page</h1>
+        <Movielist/>
+    </div>
 }
