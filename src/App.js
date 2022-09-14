@@ -18,8 +18,8 @@ function App() {
   //semi colon is being used as ${}
   return (
     <div className="App">
-      <h1>M&M</h1>
-      {company?.name} 
+      {/* <h1>M&M</h1>
+      {company?.name}  */}
       {/* {company?.headquarters} */}
       <Routes>
         <Route path="/" element = {<LandingPage/>}/>

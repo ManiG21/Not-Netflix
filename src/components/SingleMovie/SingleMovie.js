@@ -2,7 +2,7 @@ import './SingleMovie.css';
 import { useEffect, useState } from 'react';
 import { getDataApi, MovieImage } from '../../network-requests';
 import {useParams} from "react-router-dom";
-
+import logo2 from './Logo2.gif';
 export default function SingleMovie(props){
     const [movie, setMovie] = useState(props.movie)
     console.log(movie)
@@ -17,6 +17,7 @@ export default function SingleMovie(props){
   }, [])
     return(
     <div> 
+      <img id='logo2' src={logo2}></img>
         <h1>{movie?.title}</h1>
         <MovieImage movie = {movie} />
         <p>{movie?.overview}</p>

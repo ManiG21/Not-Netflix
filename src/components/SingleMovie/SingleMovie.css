@@ -1,22 +1,33 @@
 #root{
-    background-color: rgb(205, 219, 255);
+    background-color: #EDCBB1;
+    /* rgba(1, 77, 4, 0.798); */
+    /* rgba(4, 130, 8, 0.46); */
     display: flex;
-    justify-content: center;
-    justify-items: center;
+    /* justify-content: center;
+    justify-items: center; */
+    align-items: center;
+    padding-left: 800px;
     font-size: 150%;
    
 }
 h1{
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     text-decoration: underline;
+    color: #941C2F;
 }
-#text{
+p{
+    color: #941C2F;
+    /* text-decoration-
+    style: ; */
+}
+/* #text{
     display: flex;
     justify-content: center;
-}
+    
+} */
 
-img{
-    display: flex;
+/* img{
+    display: grid;
     justify-items: center; 
-}
+} */
