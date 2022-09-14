@@ -26,11 +26,11 @@ export const SearchResults = () => {
     setSearch(e.target.value)
   }
 
-  // user can type in lower case and the search will still bring up movie 
-  // that is being searched 
-  // const filterMovies = movieList.filter((movies)=>{
-  //   return movies.name.toLowerCase().includes(search.toLowerCase())
-  // })
+  // when movie entered in search bar, movie(s) will display
+  // dropdown list or grid?
+  // when search bar is being 
+
+
   console.log(movieList)
   return (
     <div className='searchBar'>
