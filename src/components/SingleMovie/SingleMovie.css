@@ -1,0 +1,22 @@
+#root{
+    background-color: rgb(205, 219, 255);
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    font-size: 150%;
+   
+}
+h1{
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+}
+#text{
+    display: flex;
+    justify-content: center;
+}
+
+img{
+    display: flex;
+    justify-items: center; 
+}

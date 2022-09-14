@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { getDataApi } from "../network-requests";
-import Singlemovie from "./Single Movie/single-movie";
+import SingleMovie from "./SingleMovie/SingleMovie";
 
 function MovieList() {
   const [moviesList, setMoviesList] = useState([]);

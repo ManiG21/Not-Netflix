@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import './App.css';
 import { Routes, Route } from "react-router-dom";
 import { getDataApi } from './network-requests';
-import Singlemovie from './components/Single Movie/single-movie'
+import SingleMovie from './components/SingleMovie/SingleMovie'
 import LandingPage from './components/LandingPage';
 
 
@@ -14,14 +14,16 @@ function App() {
       .then(res => setCompany(res))
   }, [])
   
-  console.log(company)
+  // console.log(company)
+  //semi colon is being used as ${}
   return (
     <div className="App">
       <h1>M&M</h1>
-      {company?.name} {company?.headquarters}
+      {company?.name} 
+      {/* {company?.headquarters} */}
       <Routes>
         <Route path="/" element = {<LandingPage/>}/>
-        <Route path="/movie/:id" element = {<Singlemovie/>}/>
+        <Route path="/movie/:id" element = {<SingleMovie/>}/>
       </Routes>
     </div>
   );

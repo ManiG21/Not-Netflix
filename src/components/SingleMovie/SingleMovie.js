@@ -1,15 +1,18 @@
-import './single-movie.css';
+import './SingleMovie.css';
 import { useEffect, useState } from 'react';
 import { getDataApi, MovieImage } from '../../network-requests';
+import {useParams} from "react-router-dom";
 
-
-export default function Singlemovie(props){
+export default function SingleMovie(props){
     const [movie, setMovie] = useState(props.movie)
+    console.log(movie)
   //run this only when component first hits the page
+  let {id} = useParams();
   useEffect(()=> {
     if (movie) return
     //Get movie with onclick?
-    getDataApi("movie/12")
+    
+    getDataApi(`movie/${id}`)
       .then(res => setMovie(res))
   }, [])
     return(
@@ -20,4 +23,4 @@ export default function Singlemovie(props){
     </div>
     )
 }
-{moviesList.map(movie => <Singlemovie />)}
+// {moviesList.map(movie => <Singlemovie />)}
