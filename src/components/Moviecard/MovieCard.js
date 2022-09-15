@@ -9,7 +9,7 @@ export default function MovieCard({movie}) {
         <Link to={`/movie/${movie.id}`} >
           <div className="movie-card">
           <p>{movie.original_title}</p>
-               <MovieImage movie = {movie} />   
+               < MovieImage className= "movieImage" movie = {movie} />   
              
 
 

@@ -1,6 +1,13 @@
 .movie-card{
-    height: 500px;
-    width:500px;
-    margin: 0;
-    padding: 0in;
+    border: 1px solid black;
+    margin: 5px;
+    height: 275px;
+    width: 300px;
+   
+}
+
+.movieImage {
+    height: 200px;
+    width: 200px
+
 }
