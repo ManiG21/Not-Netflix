@@ -5,7 +5,7 @@ import { getDataApi } from './network-requests';
 import Singlemovie from './components/Single Movie/single-movie'
 import LandingPage from './components/LandingPage';
 // import { SearchResults } from './components/SearchResults';
-import Navbar from './components/Navbar';
+import Navbar from './components/Navbar/Navbar';
 
 function App() {
 

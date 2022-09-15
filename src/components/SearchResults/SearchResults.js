@@ -1,7 +1,7 @@
 
 import { useEffect, useState } from 'react';
-import { getDataApi } from '../network-requests';
-import MovieList from './Movielist';
+import { getDataApi } from '../../network-requests';
+import MovieList from '../Movielist';
 
 export const SearchResults = () => {
   const [movieList, setMovieList] = useState([])
