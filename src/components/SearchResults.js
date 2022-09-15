@@ -26,10 +26,12 @@ export const SearchResults = () => {
     setSearch(e.target.value)
   }
 
-  // when movie entered in search bar, movie(s) will display
-  // dropdown list or grid?
-  // when search bar is being 
-
+//  when search bar is used options will show on screen
+// when?
+// loop (looping through movielist)
+// key word
+//  hand it to the movie props 
+// show 20 movies 
 
   console.log(movieList)
   return (
@@ -37,8 +39,6 @@ export const SearchResults = () => {
       <input value={search} onChange={(e) => handleChange(e)}></input>
        <button onClick={handleSubmit}>search</button>
       <MovieList movieList={movieList} />
-     
     </div>
-
   )
 }
