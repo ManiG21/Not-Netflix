@@ -4,5 +4,5 @@ export const getDataApi = (movie, query) => {
         .then(res => res.json()) 
 }
 // Creates an image component based on movie data
-export const MovieImage = ({movie}) => movie &&
-<img src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} alt= {movie.title}/>
+export const MovieImage = ({movie, className}) => movie &&
+<img className = {className} src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} alt= {movie.title}/>

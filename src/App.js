@@ -2,8 +2,9 @@ import { useEffect, useState } from 'react';
 import './App.css';
 import { Routes, Route } from "react-router-dom";
 import { getDataApi } from './network-requests';
-import SingleMovie from './components/SingleMovie/SingleMovie'
-import LandingPage from './components/LandingPage';
+import Singlemovie from './components/SingleMovie/single-movie'
+import LandingPage from './components/LandingPage/LandingPage';
+import MovieList from './components/MovieList/Movielist';
 
 
 function App() {
@@ -18,13 +19,12 @@ function App() {
   //semi colon is being used as ${}
   return (
     <div className="App">
-      {/* <h1>M&M</h1>
-      {company?.name}  */}
-      {/* {company?.headquarters} */}
+      
       <Routes>
         <Route path="/" element = {<LandingPage/>}/>
         <Route path="/movie/:id" element = {<SingleMovie/>}/>
       </Routes>
+      
     </div>
   );
  
