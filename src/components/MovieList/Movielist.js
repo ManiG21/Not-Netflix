@@ -1,7 +1,7 @@
 import "./Movielist.css";
 import React, { useState, useEffect } from "react";
 import { getDataApi, MovieImage } from "../../network-requests";
-import Singlemovie from "../SingleMovie/single-movie";
+import Singlemovie from "../SingleMovie/SingleMovie";
 import MovieCard from "../Moviecard/MovieCard";
 
 function MovieList() {

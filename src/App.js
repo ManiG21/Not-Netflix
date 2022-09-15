@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import './App.css';
 import { Routes, Route } from "react-router-dom";
 import { getDataApi } from './network-requests';
-import Singlemovie from './components/SingleMovie/single-movie'
+import SingleMovie from './components/SingleMovie/SingleMovie'
 import LandingPage from './components/LandingPage/LandingPage';
 import MovieList from './components/MovieList/Movielist';
 
