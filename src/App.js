@@ -2,8 +2,8 @@ import { useEffect, useState } from 'react';
 import './App.css';
 import { Routes, Route } from "react-router-dom";
 import { getDataApi } from './network-requests';
-import Singlemovie from './components/Single Movie/single-movie'
-import LandingPage from './componentjhm s/LandingPage';
+import SingleMovie from './components/SingleMovie/SingleMovie'
+import LandingPage from './components/LandingPage/LandingPage';
 // import { SearchResults } from './components/SearchResults';
 import Navbar from './components/Navbar/Navbar';
 
