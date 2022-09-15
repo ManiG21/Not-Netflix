@@ -1,0 +1,8 @@
+.movieListContainer{ 
+    background:#EDCBB1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+} 
+
+/* #EDCBB1 */

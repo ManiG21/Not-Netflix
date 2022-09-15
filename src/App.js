@@ -3,7 +3,7 @@ import './App.css';
 import { Routes, Route } from "react-router-dom";
 import { getDataApi } from './network-requests';
 import Singlemovie from './components/Single Movie/single-movie'
-import LandingPage from './components/LandingPage';
+import LandingPage from './componentjhm s/LandingPage';
 // import { SearchResults } from './components/SearchResults';
 import Navbar from './components/Navbar/Navbar';
 
@@ -16,21 +16,16 @@ function App() {
       .then(res => setCompany(res))
   }, [])
   
-  console.log(company)
+  // console.log(company)
+  //semi colon is being used as ${}
   return (
     <div className="App">
-      <h1>M&M</h1>
-      <div>
-        <Navbar/>
-      </div>
+      
       <Routes>
         <Route path="/" element = {<LandingPage/>}/>
-        <Route path="/movie/:id" element = {<Singlemovie/>}/>
-       {/* <div> */}
-       {/* <Navbar/> */}
-        {/* <Route path="/search" element={<SearchResults/>}/> */}
-      {/* </div> */}
+        <Route path="/movie/:id" element = {<SingleMovie/>}/>
       </Routes>
+      
     </div>
   );
  
