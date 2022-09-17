@@ -22,9 +22,20 @@ h2{
     /* justify-content: center; */
     text-decoration: underline;
     color: #941C2F;
-}  
+} 
 
-p{
+.single-movie-container{
+    display: flex;
+    justify-content: center;
+    
+}
+.single-movie-container .description{
+    width: 700px;
+    padding: 50px;
+    
+}
+
+.single-movie-container p{
     color: #941C2F;
     font-size: 150%;
     /* text-decoration-

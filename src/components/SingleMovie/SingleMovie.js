@@ -16,17 +16,19 @@ export default function SingleMovie(props) {
       .then(res => setMovie(res))
   }, [])
   return (
-    <div>
-      {/* <img id='logo2' src={logo2}></img> */}
-      <h2>{movie?.title}</h2>
-      <h1>{movie?.runtime} minutes</h1>
-      <h1>Rating: {movie?.vote_average} Out of 10 </h1>
-      <h1>Release Date: {movie?.release_date}</h1>
-      <h1> <a>Play Trailer</a></h1>
-      <h1> <a>Play Movie</a></h1>
-      <h1> <a>Add To My List</a> </h1>
+    <div className='container single-movie-container'  >
+      <div className='description'>
+        <h2>{movie?.title}</h2>
+        <h1>{movie?.runtime} minutes</h1>
+        <h1>Rating: {movie?.vote_average} Out of 10 </h1>
+        <h1>Release Date: {movie?.release_date}</h1>
+        <h1> <a>Play Trailer</a></h1>
+        <h1> <a>Play Movie</a></h1>
+        <h1> <a>Add To My List</a> </h1>
+        <p>Overview: <br/>  <br/>
+        {movie?.overview}</p>
+      </div>
       <MovieImage movie={movie} />
-      <p>{movie?.overview}</p>
     </div>
   )
 }

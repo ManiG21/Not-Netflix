@@ -3,3 +3,12 @@
     top: -6px;
     right: -100px;
 }
+
+#logo1{
+    height: 200px;
+}
+
+.navbar {
+    background-color: white;
+    box-shadow: 0 0 10px black;
+}

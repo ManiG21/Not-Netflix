@@ -1,6 +1,7 @@
 import { Link, useNavigate } from 'react-router-dom'
 import Logo from './Logo1.gif'
 import { useState } from 'react'
+import './Navbar.css'
 
 export default function Navbar() {
     const [search, setSearch] = useState('')
