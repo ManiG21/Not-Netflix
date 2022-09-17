@@ -1,44 +1,41 @@
 
 import { useEffect, useState } from 'react';
+import { useLocation } from 'react-router-dom';
 import { getDataApi } from '../../network-requests';
-import MovieList from '../Movielist';
+// import MovieList from '../Movielist';
+import MoviesList from '../MovieList/Movielist';
+
+
 
 export const SearchResults = () => {
+
   const [movieList, setMovieList] = useState([])
-  const [search, setSearch] = useState('')
+const location = useLocation()
 
-  useEffect(() => {
-    // fetch(`https://api.themoviedb.org/3/discover/movie?api_key=${apiKey}&language=en-US&sort_by=popularity.desc&with_genres=${genreId}`)
-    //   apiKeys(" ")
-    //   .then((setMovieList)=>{
-    //     return setMovieList.json()
-    //   })
-    //   .then(response =>{
-    //     setMovieList(response.data.movies)
-    //   })
-  }, [])
-  const handleSubmit = () => {
+console.log(location)
+const search = location.search.slice(7)
+console.log(search)
+
+  useEffect (()=> {
     getDataApi('search/movie', `query=${search}`)
-      .then(res => setMovieList(res.results))
+        .then(res => setMovieList(res.results))
 
-  }
-  const handleChange = (e) => {
-    setSearch(e.target.value)
-  }
-
-//  when search bar is used options will show on screen
-// when?
-// loop (looping through movielist)
-// key word
-//  hand it to the movie props 
-// show 20 movies 
-
-  console.log(movieList)
+},[search])
+// only want this code to run when it is loaded 
+ 
+  // console.log(movieList)
   return (
     <div className='searchBar'>
-      <input value={search} onChange={(e) => handleChange(e)}></input>
-       <button onClick={handleSubmit}>search</button>
-      <MovieList movieList={movieList} />
+     
+      <MoviesList moviesList={movieList} />
+{/* after search bar is being used Movie list will pop up  */}
+      {/* <div className='searchList'>
+        {props.SearchResults.map((movie) => {
+          return <MovieList movie={movie} />
+        })}
+
+      </div> */}
     </div>
+
   )
 }
