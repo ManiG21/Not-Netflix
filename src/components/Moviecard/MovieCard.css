@@ -1,15 +1,17 @@
 .movie-card {
-  /* border: 1px solid black; */
+  /* border: 1px solid white; */
   padding-top: 20px;
-  /* margin: 5px; */
-  height: 435px;
-  width: 370px;
+  height: 350px;
+  width: 320px;
+  display: flex;
+  justify-content: center;
 }
 
 .movieImage {
-  height: 350px;
-  width: 350px;
+  height: 300px;
+  width: 250px;
   border-radius: 25px;
+  
   /* padding-left: 5px; */
   /* -webkit-box-shadow: inset 0px 0px 20px 5px #044389,
     0px 0px 7px 4px rgba(148, 28, 47, 0.87),
@@ -33,11 +35,11 @@ box-shadow: inset 0px 0px 50px -8px rgba(0,166,237,0.69), 0px 0px 42px -3px rgba
   border: 2px solid black;
 }
 
-.title {
+/* .title { */
   /* font-family: 'Architects Daughter', cursive, bold; */
-  font-family: "Comic Neue", cursive;
+  /* font-family: "Comic Neue", cursive;
   display: flex;
   justify-content: center;
   color: #edcbb1;
   font-size: 20px;
-}
+} */
