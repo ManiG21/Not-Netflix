@@ -13,14 +13,27 @@ body{
 h1{
     display: flex;
     /* justify-content: center; */
-    text-decoration: underline;
     color: #941C2F;
 }
+
+h2{
+    font-size: 50px;
+    display: flex;
+    /* justify-content: center; */
+    text-decoration: underline;
+    color: #941C2F;
+}  
+
 p{
     color: #941C2F;
     font-size: 150%;
     /* text-decoration-
     style: ; */
+}
+
+#runtime{
+    display: flex;
+    align-self: center;
 }
 /* #text{
     display: flex;

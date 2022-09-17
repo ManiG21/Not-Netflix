@@ -17,11 +17,16 @@ export default function SingleMovie(props){
   }, [])
     return(
     <div> 
-      <img id='logo2' src={logo2}></img>
-        <h1>{movie?.title}</h1>
+      {/* <img id='logo2' src={logo2}></img> */}
+        <h2>{movie?.title}</h2>
+        <h1>{movie?.runtime} minutes</h1>
+        <h1>Rating: {movie?.vote_average} Out of 10 </h1>
+        <h1>Release Date: {movie?.release_date}</h1>
+       <h1> <a>Add To My List</a> </h1>
         <MovieImage movie = {movie} />
         <p>{movie?.overview}</p>
     </div>
     )
 }
+//Add to My List
 // {moviesList.map(movie => <Singlemovie />)}
