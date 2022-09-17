@@ -4,11 +4,12 @@ import { getDataApi, MovieImage } from "../../network-requests";
 import Singlemovie from "../SingleMovie/SingleMovie";
 import MovieCard from "../Moviecard/MovieCard";
 
-function MovieList() {
-  const [moviesList, setMoviesList] = useState([]);
+function MovieList(props) {
+  const [moviesList, setMoviesList] = useState(props.moviesList );
 
   useEffect(() => {
-    getDataApi("discover/movie", "with_genres=28").then((response) => {
+    if(moviesList) return
+    getDataApi("discover/movie", "with_genres=53").then((response) => {
       setMoviesList(response.results);
     });
   }, []);
@@ -16,7 +17,7 @@ function MovieList() {
   console.log(moviesList);
   return (
     <div className="movieListContainer">
-      {moviesList.map((movie) => (
+      {moviesList?.map((movie) => (
         <MovieCard key={movie.id} movie={movie} />
       ))}
     </div>
