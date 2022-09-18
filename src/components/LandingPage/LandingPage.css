@@ -1,5 +1,29 @@
 .landingPage{
     background: #EDCBB1;
+}
+
+.genreGrid{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 20px;
+    
+   
+}
+.genreGrid a{
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    text-decoration: none;
+    margin: auto;
+    text-align:center;
+    line-height: 300px;
+    font-size: 50px;
+    border-radius: 25px;
+    padding-bottom: 10px;
     
 
 }
+
+
+
+
