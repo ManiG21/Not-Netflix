@@ -6,6 +6,7 @@
     display: grid;
     grid-template-columns: auto auto auto auto;
     grid-gap: 20px;
+    padding-top: 30px;
     
    
 }
@@ -19,9 +20,11 @@
     line-height: 300px;
     font-size: 50px;
     border-radius: 25px;
-    padding-bottom: 10px;
     
+}
 
+.icon{
+    border: 1px solid white;
 }
 
 
