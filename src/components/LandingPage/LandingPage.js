@@ -115,7 +115,6 @@ const genreData = {
     background: "#6B0504",
     color: "#FFFBFC",
     icon: faBomb
-
   },
   Western: {
     background: "#FFFBFC",
@@ -123,12 +122,11 @@ const genreData = {
     icon: faHorse,
   },
 };
-
-export default function LandingPage(props){
+export default function LandingPage(props) {
   console.log("landingPage.", props.genres);
-  return(
+  return (
     <div className="genreGrid">
-      {/* {props.genres?.map((genre) => (
+      {props.genres?.map((genre) => (
         <Link style={genreData[genre.name]} to={`/genre/${genre.id}`}>
           <div className="container" key={genre.id}>
             {genreData[genre.name]?.icon && (
@@ -140,7 +138,7 @@ export default function LandingPage(props){
             <div>{genre.name}</div>
           </div>
         </Link>
-    ))} */}
+      ))}
     </div>
-  )
- }
+  );
+}
