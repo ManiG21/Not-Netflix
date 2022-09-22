@@ -29,7 +29,7 @@ export default function SingleMovie(props) {
   // getDataApi(`https://api.themoviedb.org/3/movie/${id}/videos?api_key=${apiKey}&language=en-US`)
   //     
   return (
-    <div className='container single-movie-container'  >
+    <div className='single-movie-container'  >
       <div className='description'>
         <h2>{movie?.title}</h2>
         <h1>{movie?.runtime} minutes</h1>

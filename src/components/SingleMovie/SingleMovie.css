@@ -26,7 +26,7 @@ h2{
 
 .single-movie-container{
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     padding: 20px;
     
 }
@@ -45,6 +45,4 @@ h2{
 
 .movie-trailer{
 margin: 30px;
-
-
 }
