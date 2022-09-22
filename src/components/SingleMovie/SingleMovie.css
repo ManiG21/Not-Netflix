@@ -27,6 +27,7 @@ h2{
 .single-movie-container{
     display: flex;
     justify-content: center;
+    padding: 20px;
     
 }
 .single-movie-container .description{
@@ -42,17 +43,8 @@ h2{
     style: ; */
 }
 
-#runtime{
-    display: flex;
-    align-self: center;
-}
-/* #text{
-    display: flex;
-    justify-content: center;
-    
-} */
+.movie-trailer{
+margin: 30px;
 
-/* img{
-    display: grid;
-    justify-items: center; 
-} */
+
+}
