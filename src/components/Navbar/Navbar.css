@@ -1,7 +1,13 @@
-.searchBar{
+/* .searchBar{
     position: relative;
     top: -6px;
     right: -100px;
+} */
+
+.navbar {
+    text-decoration: none;
+    margin: 4px;
+    cursor: pointer;
 }
 
 #logo1{
