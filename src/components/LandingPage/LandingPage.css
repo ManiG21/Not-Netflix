@@ -1,32 +1,48 @@
-.landingPage{
-    background: #EDCBB1;
+ /* #edcbb1 */
+
+.genreGrid {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-gap: 20px;
+  padding-top: 30px;
+  /* background-color: #edcbb1; */
+  
 }
 
-.genreGrid{
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-gap: 20px;
-    padding-top: 30px;
-    
-   
+.genreGrid a {
+  width: 310px;
+  height: 220px;
+  border: 1px solid black;
+  text-decoration: none;
+  text-align: center;
+  font-family:'Segoe UI', sans-serif;
+  font-size: 50px;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* -webkit-box-shadow: 1px 5px 11px 10px rgba(163, 22, 33, 0.57),
+    inset 1px 5px 20px 15px #053c5e,
+    inset 1px 5px 50px 11px rgba(5, 60, 94, 0.39),
+    inset 1px 5px 50px 11px rgba(5, 60, 94, 0.39);
+  box-shadow: 1px 5px 11px 10px rgba(163, 22, 33, 0.57),
+    inset 1px 5px 20px 15px #053c5e,
+    inset 1px 5px 50px 11px rgba(5, 60, 94, 0.39),
+    inset 1px 5px 50px 11px rgba(5, 60, 94, 0.39); */
+  -webkit-box-shadow: 1px 2px 15px 2px #a31621, inset 1px 2px 15px 2px #053c5e,
+    inset 1px 2px 15px 2px #053c5e;
+  box-shadow: 1px 2px 15px 2px #a31621, inset 1px 2px 15px 2px #053c5e,
+    inset 1px 2px 15px 2px #053c5e;
+  background: #a4a4a4;
 }
-.genreGrid a{
-    width: 300px;
-    height: 300px;
-    border: 1px solid black;
-    text-decoration: none;
-    margin: auto;
-    text-align:center;
-    line-height: 300px;
-    font-size: 50px;
-    border-radius: 25px;
-    
+
+.icon {
+  height: 70px;
+  color: #c4aead;
 }
-
-.icon{
-    border: 1px solid white;
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-
-
-
-
