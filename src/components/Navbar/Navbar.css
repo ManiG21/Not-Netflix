@@ -1,8 +1,8 @@
-/* .searchBar{
+.searchBar{
     position: relative;
-    top: -6px;
-    right: -100px;
-} */
+    top: -180px;
+    right: -1170px;
+}
 
 #logo1 {
     height: 200px;
@@ -12,5 +12,4 @@
     background-color: #EDCBB1;
     border: 4px solid black;
     box-shadow: 0 0 10px black;
-
 }

@@ -4,8 +4,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import Logo from './Logo1.gif'
 // in order to use "state" we need to import 
 import { useState } from 'react'
-
-
+import './Navbar.css'
 
 export default function Navbar() {
     // created a new variable which we used search
@@ -34,10 +33,10 @@ export default function Navbar() {
         <Link to='/'>
             <img id='logo1' src={Logo} />
         </Link> 
-{/* link to go back to landing page */}
-        <div>
-            <Link to='/Home'>LandingPage</Link>
-            {/* code for the search bar  */}
+        {/* when logo is clicked it takes user back to landing page where category boxes are displayed  */}
+        <div className='searchBar'> 
+            {/* <Link to='/Home'>LandingPage</Link> */}
+             {/* code for the search bar  */}
             <input value={search} onChange={handleChange}></input>
             {/*created a button 'search' */}
             <button onClick={handleSubmit}>search</button>

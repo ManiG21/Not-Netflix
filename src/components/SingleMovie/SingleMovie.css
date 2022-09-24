@@ -22,26 +22,27 @@ h2{
     /* justify-content: center; */
     text-decoration: underline;
     color: #941C2F;
-}  
+} 
 
-p{
+.single-movie-container{
+    display: flex;
+    /* justify-content: center; */
+    padding: 20px;
+    
+}
+.single-movie-container .description{
+    width: 700px;
+    padding: 50px;
+    
+}
+
+.single-movie-container p{
     color: #941C2F;
     font-size: 150%;
     /* text-decoration-
     style: ; */
 }
 
-#runtime{
-    display: flex;
-    align-self: center;
+.movie-trailer{
+margin: 30px;
 }
-/* #text{
-    display: flex;
-    justify-content: center;
-    
-} */
-
-/* img{
-    display: grid;
-    justify-items: center; 
-} */
