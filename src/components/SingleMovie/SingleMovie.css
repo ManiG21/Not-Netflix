@@ -24,16 +24,18 @@ h2{
 .single-movie-container .description{
     width: 700px;
     padding: 50px;
-    
+    text-shadow: 2px 0px black; 
 }
 
 .single-movie-container p{
     color: #941C2F;
     font-size: 150%;
+    text-shadow: 1px 0px black; 
     /* text-decoration-
     style: ; */
 }
 
 .movie-trailer{
 margin: 30px;
+padding-right: 100px;
 }

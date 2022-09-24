@@ -28,37 +28,44 @@ const genreData = {
     background: "#090446",
     icon: faExplosion,
     color: "#8AF3FF",
-    fontFamily: "Lucida Sans",
+    fontFamily: "'Josefin Sans', sans-serif",
   },
   Adventure: {
     background: "#109648",
     icon: faDungeon,
     color: "#BCD4DE",
+    fontFamily: "Verdana, Geneva, Tahoma, sans-serif",
   },
   Animation: {
     background: "#70163C",
     color: "#95B2B8",
     icon: faWandMagicSparkles,
+    fontFamily: "'Comic Neue', cursive",
   },
   Comedy: {
     background: "orange",
     color: "#7F6A93",
     icon: faLaughWink,
+    fontFamily: "fantasy"
   },
   Crime: {
     background: "#000000",
     color: "#F9C22E",
     icon: faCrow,
+    fontFamily: "'Caveat', cursive;"
   },
   Documentary: {
-    background: "#746D75",
-    color: "#59FFA0",
+    background: "#cd853f",
+    color: "#412234",
     icon: faVideoCamera,
+    fontFamily: "Cambria, Cochin, Georgia, 'Times New Roman', serif"
   },
   Drama: {
-    background: "#F4FFFD",
-    color: "#F72585",
+    background: "#86BBD8",
+    color: "#6B0504",
     icon: faMasksTheater,
+    fontFamily: "'Rubik Dirt', cursive"
+    
   },
   Family: {
     background: "#C9E4CA",
@@ -79,6 +86,7 @@ const genreData = {
     background: "#A3320B",
     color: "#23231A",
     icon: faSkull,
+    fontFamily: "'Permanent Marker', cursive"
   },
   Music: {
     background: "#16F4D0",
@@ -118,7 +126,7 @@ const genreData = {
   },
   Western: {
     background: "#FFFBFC",
-    color: "#D8973C",
+    color: "#754043",
     icon: faHorse,
   },
 };
