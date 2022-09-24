@@ -44,7 +44,7 @@ export default function SingleMovie(props) {
       <iframe
 
         className='movie-trailer'
-        width="640" height="400"
+        width="680" height="500"
         frameBorder="0"
         // src={`https://www.youtube.com/embed/${movieTrailerId}?enablejsapi=1`}
         
