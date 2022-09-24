@@ -1,7 +1,12 @@
 .searchBar{
-    position: relative;
-    top: -6px;
-    right: -100px;
+    display:flex;
+}
+
+.searchBar input{
+    /* position: relative;
+    top: -170px;
+    right: 0px; */
+    margin-left: auto;
 } 
 
 #logo1 {
