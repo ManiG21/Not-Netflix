@@ -12,7 +12,7 @@ import {
   faHippo,
   faHorse,
   faLaughWink,
-  faMagic,
+  // faMagic,
   faMagnifyingGlass,
   faMasksTheater,
   faMusic,
