@@ -1,17 +1,28 @@
  /* #edcbb1 */
-
-.genreGrid {
-  display: grid;
-  grid-template-columns: auto auto auto auto auto;
-  grid-gap: 30px;
-  padding-top: 30px;
-  padding-left: 30px;
+.genreGridContainer{
+  display: flex;
+  justify-content: center;
   background-color: black;
+  padding-bottom: 40px;
+}
+.genreGrid {
+  display: inline-grid;
+  grid-template-columns: repeat(auto-fill, 320px);
+  grid-gap: 70px;
+  max-width: 80%;
+  padding-top: 30px;
+  /* padding-left: 30px; */
+  /* justify-items: center; */
+  margin:auto;
+  /* align-items: center; */
+  /* place-items: center; */
 }
 
+/* anchor tags inside genreGrid */
 .genreGrid a {
-  width: 310px;
-  height: 220px;
+  height: 100%;
+  width: 100%;
+  padding: 17px;
   border: 1px solid black;
   text-decoration: none;
   text-align: center;
@@ -21,19 +32,49 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  -webkit-box-shadow: 1px 5px 11px 10px rgba(163, 22, 33, 0.57),
+  /* -webkit-box-shadow: 1px 5px 11px 10px rgba(163, 22, 33, 0.57),
     inset 1px 5px 20px 15px #053c5e,
     inset 1px 5px 50px 11px rgba(5, 60, 94, 0.39),
-    inset 1px 5px 50px 11px rgba(5, 60, 94, 0.39);
-  box-shadow: 1px 5px 11px 10px rgba(163, 22, 33, 0.57),
-    inset 1px 5px 20px 15px #053c5e,
+    inset 1px 5px 50px 11px rgba(5, 60, 94, 0.39); */
+  /* box-shadow: 
+    inset 1px 5px 10px 10px #053c5e,
     inset 1px 5px 50px 11px rgba(5, 60, 94, 0.39),
-    inset 1px 5px 50px 11px rgba(5, 60, 94, 0.39);
-  /* -webkit-box-shadow: 1px 2px 15px 2px #a31621, inset 1px 2px 15px 2px #053c5e,
-    inset 1px 2px 15px 2px #053c5e;
-  box-shadow: 1px 2px 15px 2px #a31621, inset 1px 2px 15px 2px #053c5e,
-    inset 1px 2px 15px 2px #053c5e;
-  background: #a4a4a4; */
+    inset 1px 5px 50px 11px rgba(5, 60, 94, 0.39); */
+  /* -webkit-box-shadow: 1px 2px 15px 2px #edcbb1 , inset 1px 2px 15px 2px black,
+    inset 1px 2px 15px 2px black;
+  box-shadow: 1px 2px 7px 2px #edcbb1, inset 1px 2px 15px 2px black,
+    inset 1px 2px 15px 2px black; */
+    box-shadow: 1px 2px 15px 5px  #edcbb1;
+  background: #a4a4a4;
+  text-shadow: 0 0 5px rgba(120, 120, 120, 0.8);
+  opacity: .7;
+  filter: grayscale(50%);
+  transition: all 1s;
+  
+  
+}
+.genreGrid a:hover{
+    opacity: 1;
+    filter: brightness(190%) saturate(50%)  ;
+    /* changer hover effect box shadow for each category box */
+    /* width: 120%; */
+    /* height: 120%; */
+    /* margin-left: -20px;
+    margin-top: -20px; */
+    /* transition: all 0.95s; */
+    /* transform: rotateX(360deg); */
+   
+}
+
+
+@media screen and (max-width: 600px) {
+  .genreGrid {
+    grid-template-columns: auto auto;
+  }
+  .genreGrid a {
+    width: 200px;
+    height: 110px; 
+  } 
 }
 
 .icon {

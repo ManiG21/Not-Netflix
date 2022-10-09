@@ -1,3 +1,4 @@
+// import Trailer from './Trailer/Trailer.js'
 import { faHeart } from "@fortawesome/free-regular-svg-icons";
 import {
     faBomb,
@@ -35,6 +36,7 @@ const genreData = {
     icon: faDungeon,
     color: "#BCD4DE",
     fontFamily: "Verdana, Geneva, Tahoma, sans-serif",
+    
   },
   Animation: {
     background: "#70163C",
@@ -133,9 +135,11 @@ const genreData = {
 export default function LandingPage(props) {
   console.log("landingPage.", props.genres);
   return (
-    <div className="genreGrid">
-      {props.genres?.map((genre) => (
-        <Link style={genreData[genre.name]} to={`/genre/${genre.id}`}>
+   <div className="genreGridContainer">
+      <div className='trailer'><Trailer id = {13}/></div>
+     <div className="genreGrid">
+       {props.genres?.map((genre) => (
+         <Link style={genreData[genre.name]} to={`/genre/${genre.id}`}>
           <div className="container" key={genre.id}>
             {genreData[genre.name]?.icon && (
               <FontAwesomeIcon
@@ -148,5 +152,6 @@ export default function LandingPage(props) {
         </Link>
       ))}
     </div>
+    </div> 
   );
 }
