@@ -1,41 +1,44 @@
-body{
+body {
     background-color: #EDCBB1;
 }
-h1{
+
+h1 {
     display: flex;
     /* justify-content: center; */
     color: #941C2F;
 }
 
-h2{
+h2 {
     font-size: 50px;
     display: flex;
     /* justify-content: center; */
     text-decoration: underline;
     color: #941C2F;
-} 
+}
 
-.single-movie-container{
+/* I had to put all the items in a container to adjust their position */
+.single-movie-container {
     display: flex;
     /* justify-content: center; */
     padding: 20px;
-    
-}
-.single-movie-container .description{
-    width: 700px;
-    padding: 50px;
-    text-shadow: 2px 0px black; 
+
 }
 
-.single-movie-container p{
+.single-movie-container .description {
+    width: 700px;
+    padding: 50px;
+    text-shadow: 2px 0px black;
+}
+
+.single-movie-container p {
     color: #941C2F;
     font-size: 150%;
-    text-shadow: 1px 0px black; 
+    text-shadow: 1px 0px black;
     /* text-decoration-
     style: ; */
 }
 
-.movie-trailer{
-margin: 30px;
-padding-right: 100px;
+.movie-trailer {
+    margin: 30px;
+    padding-right: 100px;
 }
